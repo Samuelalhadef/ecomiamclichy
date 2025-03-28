@@ -1,0 +1,129 @@
+@import url('./globals.css');
+
+body{
+    overflow: hidden;
+}
+
+.interface_pesee{
+    padding: 0 50px;
+}
+
+.interface_pesee h1 span{
+    color: black;
+    text-transform: lowercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.pesee{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    gap: 30px;
+}
+
+.pesee_today, .valeurs, .pesee_restes, .pesee_repas, .moyenne{
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.pesee_today{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.pesee_RestesRepas{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.pesee_item{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 35%;
+    gap: 10px;
+}
+
+.pesee_restes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    height: 23vh;
+    background-color: #30b785;
+}
+
+.chiffres{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.moyenne{
+    display: flex;
+    width: 65%;
+    background-color: #ebebeb;
+}
+
+.pesee_repas{
+    display: flex;
+    height: 48vh;
+    width: 70%;
+    background-color: #63eebb;
+}
+
+.infos_repas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input{
+    width: 30%;
+    font-size: 63px;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.nb_repas{
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 120px;
+}
+
+button{
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.valeurs{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    background-color:#ebebeb;
+}

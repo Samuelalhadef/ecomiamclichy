@@ -1,0 +1,174 @@
+@import url("./globals.css");
+
+.users{
+    padding: 0 50px;
+}
+
+.users h2{
+    margin: 0 0 20px 0;
+}
+
+a{
+    color: black;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.profile-item {
+    border-radius: 40px;
+    padding: 20px 30px;
+    background-color: #ebebeb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.profile-actions {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.profile-actions button:hover{
+    background-color: black;
+}
+
+button a:hover{
+    color: #ebebeb;
+}
+
+button{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+button:hover{
+    background-color: black;
+    color: #ebebeb;
+}
+
+.edit, .delete{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.delete{
+    color: red;
+}
+
+.delete:hover{
+    background-color: black;
+    color: red;
+}
+
+/*------------------------------------------ CRUD DELETE ------------------------------------------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 40px;
+    width: 30%;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.modal-content .close{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.confirm-delete {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+
+.cancel-delete {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+/*------------------------------------------ RESPONSIVE ------------------------------------------*/
+
+
+@media (max-width: 1200px) {
+    .profiles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .edit, .delete{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .profiles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .profiles-grid {
+        grid-template-columns: 1fr;
+    }
+}

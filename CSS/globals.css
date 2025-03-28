@@ -1,0 +1,159 @@
+/*--------------------------------- DESIGN SYSTEM ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    /* Colors */
+    --primary: #FFFFFF;
+    --secondary: #335533;
+    --background: #F5F5F3;
+    
+    /* Typography */
+    --font-family: 'Manrope', sans-serif;
+}
+
+/*--------------------------------- RESET & BASE STYLES ---------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/*------------------------------------------------- HEADER ------------------------------------------------- */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo{
+    width: 100px;
+    height: 70px;
+}
+
+/*-------------------------------- NAVIGATION BAR -------------------------------- */
+
+.off-screen-menu{
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    border-radius: 25px 0 0 25px;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    font-size: 30px;
+    transition: 0.3s ease;
+    background-color: #F5F5F3;
+    gap: 30px;
+    padding: 0 0 0 20px;
+    z-index: 19;
+}
+
+.off-screen-menu-item{
+    margin-top: 25px;
+    line-height: 5rem;
+    z-index: 20;
+}
+
+.off-screen-menu-plus {
+    align-self: flex-end;
+    padding-right: 50px;
+}
+
+.off-screen-menu-item li a, .off-screen-menu-plus li a{
+    color: black;
+}
+
+.off-screen-menu-item-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.off-screen-menu.active{
+    right: 0;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    z-index: 20;
+}
+
+.ham-menu span{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+

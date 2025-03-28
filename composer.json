@@ -1,0 +1,17 @@
+{
+    "name": "sophi/test_bap",
+    "autoload": {
+        "psr-4": {
+            "Sophi\\TestBap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nakamury1",
+            "email": "sophielamsova29@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.1"
+    }
+}

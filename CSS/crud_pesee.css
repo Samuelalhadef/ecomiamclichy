@@ -1,0 +1,80 @@
+@import url("./globals.css");
+
+.crud_pesee{
+    padding: 0 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.textbox{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.info_to label{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.info_to input{
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 9vh;
+
+}
+
+.info_to .restes{
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 26vh;
+}
+
+input::placeholder{
+    font-size: 40px;
+}
+
+button{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: none;
+    color: black;
+}
+
+.choix{
+    margin: 30px 0;
+}
+
+.back{
+    padding: 0 35px;
+}
+
+button:hover{
+    background-color: black;
+    color: #ebebeb;
+}

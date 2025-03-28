@@ -1,0 +1,74 @@
+@import url("./globals.css");
+
+.accueil{
+    padding: 0 0 0 50px;
+    margin: 30px 0;
+}
+
+.content_accueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 50px;
+    height: 60vh;
+}
+
+.content_menu, .users, .synthese, .gestion_vote, .pesee{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #ebebeb;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.content_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #63eebb;
+    width: 100%;
+}
+
+.menu{
+    line-height: 2rem;
+    
+}
+
+.menu_item{
+    display: flex;
+    margin: 15px 0;
+}
+
+.users, .synthese, .gestion_vote, .pesee{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.gestion_vote, .pesee{
+    background-color: #ff7070;
+}
+
+button{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+button a{
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+button a:hover{
+    background-color: black;
+    color: #ebebeb;
+}
